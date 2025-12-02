@@ -10,16 +10,18 @@
 	<!-- the entire body must be written by student -->
 	<form method="post">
 		<label for="name">Name*</label>
-		<input type="name"  id="name">
+		<input type="text"  id="name" required>
 		<br><br>
 			<label for="email">Email*</label>
-				<input type="email"  id="email">
+				<input type="email"  id="email" required>
 		<br><br>
-				<label for="Gender">Gender*</label>
-				<input type="radio"  class="Gender"  value ="Female">
-		
-				Female
-					<input type="radio" class="Gender" value="Male">Male
+			<label for="gender">Gender*</label>
+
+		<input type="radio" name="gender" id="female" value="Female" required>
+		<label for="female">Female</label>
+
+		<input type="radio" name="gender" id="male" value="Male" required>
+		<label for="male">Male</label>
 		<br><br>
 		<label for="laptop">Laptops Brands</label>
 					<select name="Laptop Brands" id="laptop">
@@ -33,7 +35,7 @@
 					<input type="number" id="age">
 		<br><br>
 						<label for="dob">Date of Birth*</label>
-							<input type="dob"   id="dob">
+							<input type="date"   id="dob">
 		<br><br>
 							<label for ="password">Password*</label>
 <input type="password"  id="password">
